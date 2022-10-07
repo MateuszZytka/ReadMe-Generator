@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require("fs")
 const inquirer = require("inquirer");
+const markdownTemplate = require("./utils/generateMarkdown.js")
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -40,46 +41,13 @@ const questions = [
         name: "Test"
     },
     {
-        type: "input",
+        type: "list",
         message: "What Licenses are you using?",
+        choices: [ "MIT", new inquirer.Separator(), "ISC", new inquirer.Separator(),"Mozilla", new inquirer.Separator(), "No License" ],
         name: "License"
     }
 ];
 
-const markdownTemplate = ({ Title, Description, Installation, Usage, Credits, Contribution, Test, License}) =>
-`# ${Title}
-
-## Description
-
-${Description}
-
-## Installation
-
-${Installation}
-
-## Usage
-
-${Usage}
-
-## Credits
-
-${Credits}
-
-## License
-
-${License}
-
-## Badges
-
-${Badges}
-
-## How to Contribute
-
-${Contribution}
-
-## Tests
-
-${Test}`;
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -93,7 +61,6 @@ function init() {
         const generateReadME = markdownTemplate(answers)
         writeToFile("ReadME.md", (generateReadME))
     })
-    
 }
 
 // Function call to initialize app
