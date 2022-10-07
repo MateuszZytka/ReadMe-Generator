@@ -45,6 +45,17 @@ function renderLicenseSection(License) {
 function generateMarkdown({ Title, Description, Installation, Usage, Credits, Contribution, Test, License}) {
   return `# ${Title}
 
+## Table of Contents
+
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Credits](#Credits)
+  - [License](#License)
+  - [Badges](#Badges)
+  - [Contribution](#Contribution)
+  - [Test](#Test)
+
 ## Description
   
 ${Description}

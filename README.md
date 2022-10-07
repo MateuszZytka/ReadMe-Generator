@@ -1,16 +1,27 @@
-# ReadMe Generator
+# ReadME Generator
+
+## Table of Contents
+
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Credits](#Credits)
+  - [License](#License)
+  - [Badges](#Badges)
+  - [Contribution](#Contribution)
+  - [Test](#Test)
 
 ## Description
   
-A node.js script that generates a professional readme with ease.
+A node.js script to generate a professional readme with ease.
   
 ## Installation
   
-N/A
+Install Node.JS
   
 ## Usage
 
-Used to generate a ReadME
+Used with node.js to create a readme with user inputs
 
 ## Credits
 
@@ -32,7 +43,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## How to Contribute
 
-Contribute freely
+Contribute Freely
 
 ## Tests
 
